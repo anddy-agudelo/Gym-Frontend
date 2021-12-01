@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Maquina } from '../models/maquina.models';
+import { Maquina } from '../models/maquina.model';
 import { MaquinaService } from '../services/maquina.service';
 
 
