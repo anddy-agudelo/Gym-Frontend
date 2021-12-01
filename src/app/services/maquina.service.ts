@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { Maquina } from '../models/maquina.models';
+import { Maquina } from '../models/maquina.model';
 
 const baseURL= environment.baseURL;
 @Injectable({
@@ -15,9 +15,10 @@ export class MaquinaService {
     return { headers: { 'Access-Control-Allow-Origin':'*'} };
   }
 
+  
+
   //Método GET
   traerMaquinas(){
     return this.http.get<Maquina[]>(`${baseURL}/maquinas`, this.headers);
   }
 }
-
