@@ -1,0 +1,10 @@
+<div class="flex">
+    <div class="contenedor">
+        <app-lista [maquinas]="maquinas" (onEdit)="editar($event)"></app-lista>
+    </div>
+    <div class="contenedor">
+        <app-agregar [maquina]="auxMaquina" (onNuevaMaquina)="enviar($event)"></app-agregar>
+        <p class="mt-5">{{mensaje}}</p>
+        <img *ngIf="estado" src="../../../assets/cargando.gif" alt="" srcset="">
+    </div>
+</div>

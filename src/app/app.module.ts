@@ -1,13 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './autenticar/login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
-import { MaquinaComponent } from './maquina/maquina.component';
+
+
+import { MaquinaComponent } from './maquina/maquina/maquina.component';
+import { ListaComponent } from './maquina/lista/lista.component';
+import { AgregarComponent } from './maquina/agregar/agregar.component';
 import { SedeComponent } from './sede/sede/sede.component';
+import { EjercicioComponent } from './ejercicio/ejercicio/ejercicio.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +21,18 @@ import { SedeComponent } from './sede/sede/sede.component';
     LoginComponent,
     InicioComponent,
     MaquinaComponent,
-    SedeComponent
+    SedeComponent,
+    EjercicioComponent,
+    ListaComponent,
+    AgregarComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,    
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

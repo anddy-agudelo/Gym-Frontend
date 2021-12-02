@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SedeComponent } from './sede.component';
+import { AgregarComponent } from './agregar/agregar.component';
+import { ListaComponent } from './lista/lista.component';
 
 
 
 @NgModule({
   declarations: [
-    SedeComponent
+    SedeComponent,
+    AgregarComponent,
+    ListaComponent
   ],
   imports: [
     CommonModule

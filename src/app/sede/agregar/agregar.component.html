@@ -1,0 +1,18 @@
+<h1>Ingresar Sede</h1>
+<form [formGroup]="SedeForm" (ngSubmit)="enviar()">
+    <div class="mb-3">
+        <label class="form-label">Id Sede</label>
+        <input type="text" class="form-control" placeholder="Ingrese el id" formControlName="id">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Nombre Sede</label>
+        <input type="text" class="form-control" placeholder="Ingrese el nombre de la sede"
+            formControlName="nombre_sede">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Dirección Sede</label>
+        <input type="text" class="form-control" placeholder="Ingrese la dirección de la sede"
+            formControlName="direccion">
+    </div>
+    <button type="submit" class="btn btn-success">Guardar Sede</button>
+</form>

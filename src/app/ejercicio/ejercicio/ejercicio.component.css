@@ -1,0 +1,8 @@
+.contenedor{
+    margin-top: 60px;
+    width: 30%;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+} 

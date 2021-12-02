@@ -11,6 +11,12 @@ export class SedeComponent implements OnInit {
 
   public sedes: Sede[] = [];
 
+  public auxSede!: Sede;
+
+  mensaje: string="";
+
+  estado: boolean = false;
+
   //Inyectar el servicio
   constructor(private sedeService: SedeService) { }
 
@@ -24,4 +30,19 @@ export class SedeComponent implements OnInit {
         console.log(sedes);
     })
   }
+
+  //Utilizando el método del service por POST
+  enviar(sede: Sede){ //Lo recibe desde el $event --->Maquina
+    this.estado=true;
+    this.sedeService.guardarSedes(sede).subscribe((respuesta: any)=>{
+    console.log(respuesta)
+    this.mensaje=respuesta.mensaje
+    this.traerSedes();
+    this.estado=false;
+    })
+    }
+
+    editar(sede:Sede){
+      this.auxSede=sede;
+    }
 }
