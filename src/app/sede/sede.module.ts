@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SedeComponent } from './sede.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    SedeComponent
+  ],
   imports: [
     CommonModule
   ]

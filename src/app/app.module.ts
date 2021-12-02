@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './autenticar/login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { MaquinaComponent } from './maquina/maquina.component';
+import { SedeComponent } from './sede/sede/sede.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     InicioComponent,
-    MaquinaComponent
+    MaquinaComponent,
+    SedeComponent
   ],
   imports: [
     BrowserModule,

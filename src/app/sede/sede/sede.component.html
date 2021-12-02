@@ -1,0 +1,19 @@
+<div class="contenedor">
+    <table class="table">
+       <thead>
+         <tr>
+             <th >Id</th>
+             <th >Nombre</th>
+             <th >Dirección</th>
+           </tr>
+       </thead>
+       <tbody *ngFor="let sede of sedes">
+           <tr>
+               <td>{{sede.id}}</td>
+               <td>{{sede.nombre_sede}}</td>
+               <td>{{sede.direccion}}</td>
+           </tr>
+ 
+       </tbody>
+    </table>
+ </div>
