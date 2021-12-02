@@ -1,0 +1,13 @@
+<h1>Ingresar Maquina</h1>
+<form [formGroup]="MaquinaForm" (ngSubmit)="enviar()">
+    <div class="mb-3">
+        <label class="form-label">Id Maquina</label>
+        <input type="text" class="form-control" placeholder="Ingrese el id" formControlName="id">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Nombre Maquina</label>
+        <input type="text" class="form-control" placeholder="Ingrese el nombre de la maquina"
+            formControlName="nombre_maq">
+    </div>
+    <button type="submit" class="btn btn-success">Guardar Maquina</button>
+</form>

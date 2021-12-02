@@ -21,4 +21,9 @@ export class MaquinaService {
   traerMaquinas(){
     return this.http.get<Maquina[]>(`${baseURL}/maquinas`, this.headers);
   }
+
+    //Método POST
+    guardarMaquinas(data:Maquina){
+      return this.http.post(`${baseURL}/maquinas`,data);
+   }
 }
