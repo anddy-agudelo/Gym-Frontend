@@ -16,8 +16,6 @@ export class EjercicioService {
     return { headers: { 'Access-Control-Allow-Origin':'*'} };
   }
 
-  
-
   //Método GET
   traerEjercicios(){
     return this.http.get<Ejercicio[]>(`${baseURL}/ejercicios`, this.headers);

@@ -9,22 +9,23 @@ import { LoginComponent } from './autenticar/login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 
 
-import { MaquinaComponent } from './maquina/maquina/maquina.component';
-import { ListaComponent } from './maquina/lista/lista.component';
-import { AgregarComponent } from './maquina/agregar/agregar.component';
+
 import { SedeComponent } from './sede/sede/sede.component';
 import { EjercicioComponent } from './ejercicio/ejercicio/ejercicio.component';
+import { ListaComponent } from './sede/lista/lista.component';
+import { AgregarComponent } from './sede/agregar/agregar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     InicioComponent,
-    MaquinaComponent,
     SedeComponent,
     EjercicioComponent,
     ListaComponent,
-    AgregarComponent
+   
+    AgregarComponent,
+    
 
   ],
   imports: [

@@ -14,9 +14,7 @@ export class SedeService {
 
   get headers(){
     return { headers: { 'Access-Control-Allow-Origin':'*'} };
-  }
-
-  
+  }  
 
   //Método GET
   traerSedes(){

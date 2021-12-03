@@ -8,5 +8,10 @@ export interface Ejercicio {
     viernes: boolean;
     sabado: boolean;
     domingo: boolean;
-    maquina: string;
+    maquina: infoMaquina;
+  
+  }
+  interface infoMaquina{
+    id: string;
+    nombre_maq: string;
   }

@@ -29,7 +29,7 @@ SedeForm!:FormGroup;
   ngOnChanges(changes: SimpleChanges){
     this.SedeForm=this.fb.group({
       id:[this.sedeRecibida.id,Validators.required],
-      nombre_maq:[this.sedeRecibida.nombre_sede,Validators.required],
+      nombre_sede:[this.sedeRecibida.nombre_sede,Validators.required],
       direccion:[this.sedeRecibida.direccion,Validators.required]
     })
   }
