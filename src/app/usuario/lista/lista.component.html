@@ -1,0 +1,30 @@
+<h1>Lista de Usuarios</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Usuario</th>
+            <th >Nombres</th>
+            <th >Cedula</th>
+            <th >Genero</th>
+            <th >Correo</th>
+            <th >Telefono</th>
+            <th >Direccion</th>
+            <th >Fecha Nacimiento</th>
+            <th >Estatura</th>
+            <th >Peso</th>
+            <th ></th>
+            <th >Acción</th>
+            <th >Acción</th>
+            <th >Acción</th>
+
+        </tr>
+    </thead>
+    <tbody *ngFor="let maquina of maquinas">
+        <tr>
+            <td>{{maquina.id}}</td>
+            <td>{{maquina.nombre_maq}}</td>
+            <td><a class="btn btn-success" (click)="editar(maquina)">Editar</a></td>
+        </tr>
+    </tbody>
+</table>
