@@ -27,12 +27,9 @@ import { EjercicioComponent } from './ejercicio/ejercicio/ejercicio.component';
     EjercicioComponent,
     ListaComponent,
     AgregarComponent,
-<<<<<<< HEAD
     ListarSedeComponent,
     AgregarSedeComponent
 
-=======
->>>>>>> 5f027fd5307eff15dd0e5a375438e4711780b14a
   ],
   imports: [
     BrowserModule,
