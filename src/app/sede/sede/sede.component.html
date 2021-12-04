@@ -1,19 +1,10 @@
-<div class="contenedor">
-    <table class="table">
-       <thead>
-         <tr>
-             <th >Id</th>
-             <th >Nombre</th>
-             <th >Dirección</th>
-           </tr>
-       </thead>
-       <tbody *ngFor="let sede of sedes">
-           <tr>
-               <td>{{sede.id}}</td>
-               <td>{{sede.nombre_sede}}</td>
-               <td>{{sede.direccion}}</td>
-           </tr>
- 
-       </tbody>
-    </table>
- </div>
+<div class="flex">
+    <div class="contenedor">
+        <app-listar-sede [sedes]="sedes" (onEdit)="editar($event)"></app-listar-sede>
+    </div>
+    <div class="contenedor">
+        <app-agregar-sede [sede]="auxSede" (onNuevaSede)="enviar($event)"></app-agregar-sede>
+        <p class="mt-5">{{mensaje}}</p>
+        <img *ngIf="estado" src="../../../assets/cargando.gif" alt="" srcset="">
+    </div>
+</div>

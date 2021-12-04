@@ -13,6 +13,8 @@ import { MaquinaComponent } from './maquina/maquina/maquina.component';
 import { ListaComponent } from './maquina/lista/lista.component';
 import { AgregarComponent } from './maquina/agregar/agregar.component';
 import { SedeComponent } from './sede/sede/sede.component';
+import { ListarSedeComponent } from './sede/listar-sede/listar-sede.component';
+import { AgregarSedeComponent } from './sede/agregar-sede/agregar-sede.component';
 import { EjercicioComponent } from './ejercicio/ejercicio/ejercicio.component';
 
 @NgModule({
@@ -24,7 +26,9 @@ import { EjercicioComponent } from './ejercicio/ejercicio/ejercicio.component';
     SedeComponent,
     EjercicioComponent,
     ListaComponent,
-    AgregarComponent
+    AgregarComponent,
+    ListarSedeComponent,
+    AgregarSedeComponent
 
   ],
   imports: [
