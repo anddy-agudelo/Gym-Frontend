@@ -10,7 +10,6 @@ import { InicioComponent } from './inicio/inicio.component';
 import { MaquinaComponent } from './maquina/maquina/maquina.component';
 import { ListaComponent } from './maquina/lista/lista.component';
 import { AgregarComponent } from './maquina/agregar/agregar.component';
-import { UsuarioComponent } from './usuario/usuario/usuario.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { UsuarioComponent } from './usuario/usuario/usuario.component';
     MaquinaComponent,
     ListaComponent,
     AgregarComponent,
-    UsuarioComponent
   ],
   imports: [
     BrowserModule,
