@@ -11,8 +11,12 @@ export class MaquinaService {
 
   constructor(private http: HttpClient) { }
 
+  getToken(){
+    return localStorage.getItem('hash') || ''
+  }
+
   get headers(){
-    return { headers: { 'Access-Control-Allow-Origin':'*'} };
+    return { headers: { 'Authorization':this.getToken()} };
   }
 
   
