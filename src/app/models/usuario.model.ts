@@ -18,7 +18,7 @@ export interface Usuario {
   hash: string;
 }
 
-interface Sede {
+export interface Sede {
   id: string;
   nombre_sede: string;
   direccion: string;

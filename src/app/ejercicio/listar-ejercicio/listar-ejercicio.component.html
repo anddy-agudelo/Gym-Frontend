@@ -1,0 +1,36 @@
+<h1>Lista de Ejercicios</h1>
+<table class="table">
+    <thead>
+      <tr>
+          <th >Id</th>
+          <th >Descripcion</th>
+          <th >Lunes</th>
+          <th >Martes</th>
+          <th >Miércoles</th>
+          <th >Jueves</th>
+          <th >viernes</th>
+          <th >Sábado</th>
+          <th >Domingo</th>
+          <th >Maquina</th>
+          <th >Acción</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let ejercicio of ejercicios">
+        <tr>
+          
+             <td>{{ejercicio.id}}</td>                   
+            <td>{{ejercicio.descripcion}}</td>
+            <td><input type="checkbox"/></td>
+            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" /></td>
+            <td><input type="checkbox" /></td>
+            <td>{{ejercicio.maquina}}</td>
+            <td><a class="btn btn-success" (click)="editar(ejercicio)">Editar</a></td>
+        </tr>
+
+    </tbody>
+ </table>
+

@@ -1,0 +1,10 @@
+<div class="flex">
+    <div class="contenedor">
+        <app-listar-sede [sedes]="sedes" (onEdit)="editar($event)"></app-listar-sede>
+    </div>
+    <div class="contenedor">
+        <app-agregar-sede [sede]="auxSede" (onNuevaSede)="enviar($event)"></app-agregar-sede>
+        <p class="mt-5">{{mensaje}}</p>
+        <img *ngIf="estado" src="../../../assets/cargando.gif" alt="" srcset="">
+    </div>
+</div>
