@@ -2,11 +2,11 @@
 <form [formGroup]="EjercicioForm" (ngSubmit)="enviar()">
     <div class="mb-3">
         <label class="form-label">Id Ejercicio</label>
-        <input type="text" class="form-control" placeholder="Ingrese el id" formControlName="id">
+        <input type="text" style="width : 700px" class="form-control" placeholder="Ingrese el id" formControlName="id">
     </div>
     <div class="mb-3">
         <label class="form-label">Descripción</label>
-        <input type="text" class="form-control" placeholder="Ingrese la descripcion"
+        <input type="text" style="width : 700px" class="form-control" placeholder="Ingrese la descripcion"
             formControlName="descripcion">
     </div>
     <div class="mb-3">
@@ -47,7 +47,7 @@
     <div class="mb-3">
         <label class="form-label">Máquina</label>
         <!-- <input type="text" class="form-control" placeholder="Ingrese el nombre de la maquina" formControlName="nombre_maq"> -->
-        <select formControlName="maquina" class="form-control">
+        <select formControlName="maquina" style="width : 400px" class="form-control">
             <option value="{{maquina.id}}" *ngFor="let maquina of maquinas">{{maquina.nombre_maq}}</option>
         </select>
     </div>
