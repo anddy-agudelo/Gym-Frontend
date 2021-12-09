@@ -1,0 +1,57 @@
+<h1>Ingresar Ejercicio</h1>
+<form [formGroup]="EjercicioForm" (ngSubmit)="enviar()">
+    <div class="mb-3">
+        <label class="form-label">Id Ejercicio</label>
+        <input type="text" class="form-control" placeholder="Ingrese el id" formControlName="id">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Descripción</label>
+        <input type="text" class="form-control" placeholder="Ingrese la descripcion"
+            formControlName="descripcion">
+    </div>
+    <div class="mb-3">
+        <input type="checkbox"  placeholder="Ingrese actividad lunes"
+            formControlName="lunes">
+        <label class="form-label">Lunes</label>        
+    </div>
+    <div class="mb-3">
+        <input type="checkbox"  placeholder="Ingrese actividad martes"
+            formControlName="martes">
+        <label class="form-label">Martes</label>        
+    </div>
+    <div class="mb-3">
+        <input type="checkbox"  placeholder="Ingrese actividad miercoles"
+            formControlName="miercoles">
+        <label class="form-label">Miércoles</label>        
+    </div>
+    <div class="mb-3">
+        <input type="checkbox"  placeholder="Ingrese actividad jueves"
+            formControlName="jueves">
+        <label class="form-label">Jueves</label>        
+    </div>
+    <div class="mb-3">
+        <input type="checkbox"  placeholder="Ingrese actividad viernes"
+            formControlName="viernes">
+        <label class="form-label">Viernes</label>        
+    </div>
+    <div class="mb-3">
+        <input type="checkbox"  placeholder="Ingrese actividad sabado"
+            formControlName="sabado">
+        <label class="form-label">Sábado</label>        
+    </div>
+    <div class="mb-3">
+        <input type="checkbox"  placeholder="Ingrese actividad domingo"
+            formControlName="domingo">
+        <label class="form-label">Domingo</label>        
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Máquina</label>
+        <!-- <input type="text" class="form-control" placeholder="Ingrese el nombre de la maquina" formControlName="nombre_maq"> -->
+        <select formControlName="maquina" class="form-control">
+            <option value="{{maquina.id}}" *ngFor="let maquina of maquinas">{{maquina.nombre_maq}}</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">Guardar Ejercicio</button>
+</form>
+

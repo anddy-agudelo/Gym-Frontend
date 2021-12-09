@@ -52,18 +52,18 @@
 <body class="text-center bg-white">
 
     <main class="form-signin">
-        <form>
+        <form [formGroup]="loginForm" (ngSubmit)="entrar()">
             <h1 class="fw-bolder fs-1">Olympus Gym</h1>
             <img class="mb-4" src="https://t3.ftcdn.net/jpg/03/27/40/42/240_F_327404267_B973AW02sz0ZspsAr1ZQ7H89XgWbFKrG.jpg" alt="" width="90">
             
             <h1 class="h3 mb-3 fw-normal">Iniciar Sesión</h1>
 
             <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Usuario">
+                <input type="text" formControlName="username" class="form-control" placeholder="Usuario">
                 <label for="floatingInput">Usuario</label>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+                <input formControlName="password" type="password" class="form-control" placeholder="Contraseña">
                 <label for="floatingPassword">Contraseña</label>
             </div>
 
@@ -72,11 +72,11 @@
                     <input type="checkbox" value="remember-me"> Recordarme
                 </label>
             </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" routerLink="home">Ingresar</button>
             
             <div class="small">
                 <br>
-                <a href="#">Necesitas una cuenta? Regístrate!</a>
+                <a routerLink="registrar">Necesitas una cuenta? Regístrate!</a>
             </div>
         
         </form>

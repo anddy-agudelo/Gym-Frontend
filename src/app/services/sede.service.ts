@@ -1,13 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { Maquina } from '../models/maquina.model';
+import { Sede } from '../models/sede.model';
 
 const baseURL= environment.baseURL;
+
 @Injectable({
   providedIn: 'root'
 })
-export class MaquinaService { 
+export class SedeService {
 
   constructor(private http: HttpClient) { }
 
@@ -22,12 +23,12 @@ export class MaquinaService {
   
 
   //Método GET
-  traerMaquinas(){
-    return this.http.get<Maquina[]>(`${baseURL}/maquinas`, this.headers);
+  traerSedes(){
+    return this.http.get<Sede[]>(`${baseURL}/sedes`, this.headers);
   }
 
-    //Método POST
-    guardarMaquinas(data:Maquina){
-      return this.http.post(`${baseURL}/maquinas`,data);
-   }
+  //Método POST
+  guardarSedes(data:Sede){
+    return this.http.post(`${baseURL}/sedes`,data);
+ }
 }

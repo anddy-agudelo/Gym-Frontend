@@ -7,10 +7,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './autenticar/login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
+
+
 import { MaquinaComponent } from './maquina/maquina/maquina.component';
 import { ListaComponent } from './maquina/lista/lista.component';
 import { AgregarComponent } from './maquina/agregar/agregar.component';
-import { UsuarioComponent } from './usuario/usuario/usuario.component';
+import { SedeComponent } from './sede/sede/sede.component';
+import { ListarSedeComponent } from './sede/listar-sede/listar-sede.component';
+import { AgregarSedeComponent } from './sede/agregar-sede/agregar-sede.component';
+import { EjercicioComponent } from './ejercicio/ejercicio/ejercicio.component';
+import { AgregarEjercicioComponent } from './ejercicio/agregar-ejercicio/agregar-ejercicio.component';
+import { ListarEjercicioComponent } from './ejercicio/listar-ejercicio/listar-ejercicio.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +25,15 @@ import { UsuarioComponent } from './usuario/usuario/usuario.component';
     LoginComponent,
     InicioComponent,
     MaquinaComponent,
+    SedeComponent,
+    EjercicioComponent,
     ListaComponent,
     AgregarComponent,
-    UsuarioComponent
+    ListarSedeComponent,
+    AgregarSedeComponent,
+    AgregarEjercicioComponent,
+    ListarEjercicioComponent
+
   ],
   imports: [
     BrowserModule,
