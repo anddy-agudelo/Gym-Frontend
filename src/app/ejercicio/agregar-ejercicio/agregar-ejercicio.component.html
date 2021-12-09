@@ -46,7 +46,10 @@
     </div>
     <div class="mb-3">
         <label class="form-label">Máquina</label>
-        <input type="text" class="form-control" placeholder="Ingrese el nombre de la maquina" formControlName="maquina">
+        <!-- <input type="text" class="form-control" placeholder="Ingrese el nombre de la maquina" formControlName="nombre_maq"> -->
+        <select formControlName="maquina" class="form-control">
+            <option value="{{maquina.id}}" *ngFor="let maquina of maquinas">{{maquina.nombre_maq}}</option>
+        </select>
     </div>
 
     <button type="submit" class="btn btn-success">Guardar Ejercicio</button>

@@ -20,17 +20,24 @@
           
              <td>{{ejercicio.id}}</td>                   
             <td>{{ejercicio.descripcion}}</td>
-            <td><input type="checkbox"/></td>
-            <td><input type="checkbox" /></td>
-            <td><input type="checkbox" /></td>
-            <td><input type="checkbox" /></td>
-            <td><input type="checkbox" /></td>
-            <td><input type="checkbox" /></td>
-            <td><input type="checkbox" /></td>
-            <td>{{ejercicio.maquina}}</td>
+            <td *ngIf="ejercicio.lunes"><input type="checkbox" checked/></td>
+            <td *ngIf="!ejercicio.lunes"><input type="checkbox"/></td>
+            <td *ngIf="ejercicio.martes"><input type="checkbox" checked/></td>
+            <td *ngIf="!ejercicio.martes"><input type="checkbox"/></td>
+            <td *ngIf="ejercicio.miercoles"><input type="checkbox" checked/></td>
+            <td *ngIf="!ejercicio.miercoles"><input type="checkbox"/></td>
+            <td *ngIf="ejercicio.jueves"><input type="checkbox" checked/></td>
+            <td *ngIf="!ejercicio.jueves"><input type="checkbox"/></td>
+            <td *ngIf="ejercicio.viernes"><input type="checkbox" checked/></td>
+            <td *ngIf="!ejercicio.viernes"><input type="checkbox"/></td>
+            <td *ngIf="ejercicio.sabado"><input type="checkbox" checked/></td>
+            <td *ngIf="!ejercicio.sabado"><input type="checkbox"/></td>
+            <td *ngIf="ejercicio.domingo"><input type="checkbox" checked/></td>
+            <td *ngIf="!ejercicio.domingo"><input type="checkbox"/></td>
+            
+            <td>{{ejercicio.maquina.nombre_maq}}</td>
             <td><a class="btn btn-success" (click)="editar(ejercicio)">Editar</a></td>
         </tr>
 
     </tbody>
  </table>
-
